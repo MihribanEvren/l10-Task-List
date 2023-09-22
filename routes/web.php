@@ -16,7 +16,7 @@ use Illuminate\Http\Request;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-l
+
 Route::get('/tasks', function () {
     return view('index', [
         'tasks'=> Task::Latest()->paginate()
